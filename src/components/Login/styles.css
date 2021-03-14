@@ -38,4 +38,5 @@
 .container > .body > .form-container .small-text {
   font-size: 12px;
   color: #434343;
+  display: grid;
 }

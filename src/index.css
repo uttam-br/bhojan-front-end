@@ -2,8 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
+  box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   margin: 0px;
   padding: 0px;
   /* border: 1px solid tomato; */
+}
+
+a {
+  color: #441e96;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-weight: 500;
 }
