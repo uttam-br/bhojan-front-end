@@ -1,5 +1,12 @@
 .main-logo {
   color: #0372c1;
   font-family: "Codystar", sans-serif;
-  font-size: 72px;
+  font-size: 60px;
+}
+
+
+@media (max-width: 800px) {
+  .main-logo {
+    font-size: 42px;
+  }
 }

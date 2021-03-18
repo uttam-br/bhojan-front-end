@@ -9,18 +9,23 @@ const post = {
   available: "false",
   description: "Approx 2kg, enough for 2 people",
   distance: "8.1km away",
-  image: "https://via.placeholder.com/300",
+  image: "https://via.placeholder.com/250",
   author: {
     name: "Uttam Rabari",
     phone: "9313958351",
     stars: "4",
-    image: "https://via.placeholder.com/70",
+    image: "https://via.placeholder.com/50",
   },
 };
 
 function PostsContainer(props) {
   return (
-    <div>
+    <div className="post-container">
+      <Post post={post} author={post.author} />
+      <Post post={post} author={post.author} />
+      <Post post={post} author={post.author} />
+      <Post post={post} author={post.author} />
+      <Post post={post} author={post.author} />
       <Post post={post} author={post.author} />
     </div>
   );

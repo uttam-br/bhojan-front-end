@@ -1,9 +1,10 @@
 .post {
+  background-color: #f0f0f0;
   border: none;
   border-radius: 5px;
-  background-color: #f0f0f0;
-  display: grid;
-  grid-template-columns: auto 300px;
+  cursor: pointer;
+  display: flex;
+  justify-content:space-between;
   overflow: hidden;
 }
 
@@ -16,4 +17,22 @@
 
 .column-1 > .author-container {
   display: flex;
+}
+
+.column-1 > .author-container > .author-image-container {
+  margin-right: 10px;
+}
+
+.column-1 > .author-container > .author-image-container > img {
+  border-radius: 50%;  
+}
+
+.column-1 > .author-container > .author-info-container {
+  align-items: center;
+  display: grid;
+}
+
+.column-2 > .post-image {
+  align-items: center;
+  display: grid;
 }

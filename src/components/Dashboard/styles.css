@@ -4,39 +4,9 @@
   margin: auto;
 }
 
-.container > .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px 0px;
-}
-
-.container > .header > .buttons {
-  display: flex;
-}
-
-.container > .header > .buttons > button {
-  font-size: 16px;
-  margin: 10px;
-  text-align: center;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 2px;
-  background-color: #0372c1;
-  min-width: 125px;
-}
-
-.container > .header > .buttons > .user-circle > img {
-  border-radius: 50%;
-}
-
 .container > .horizontal-separator {
   width: 100%;
   background-color: #e0e0e0;
-}
-
-.container > .body {
 }
 
 .container > .body > .bullet-points > .bullet-point {

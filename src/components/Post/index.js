@@ -1,5 +1,7 @@
 import React from "react";
 
+import { StarBorder, Star } from "@material-ui/icons";
+
 import "./styles.css";
 
 function Post({ post, author }) {
@@ -7,8 +9,8 @@ function Post({ post, author }) {
     <div className="post">
       <div className="column-1">
         <div className="post-details">
-          <div></div>
-          <h1>{post.title}</h1>
+          <h2>{post.title}</h2>
+          <br />
           <div className="post-description">{post.description}</div>
         </div>
         <div className="author-container">
@@ -16,8 +18,14 @@ function Post({ post, author }) {
             <img src={author.image} alt={author.title} />
           </div>
           <div className="author-info-container">
-            <h2>{author.name}</h2>
-            <p>{author.phone}</p>
+            <h3>{author.name}</h3>
+            <p>
+              <Star fontSize="small" />
+              <Star fontSize="small" />
+              <Star fontSize="small" />
+              <Star fontSize="small" />
+              <StarBorder fontSize="small" />
+            </p>
           </div>
         </div>
       </div>
