@@ -1,44 +1,43 @@
-
 .header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 0px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
 }
 
 .header > div {
-    display: flex;
+  display: flex;
 }
 
-.header > div > .buttons {
-    display: flex;
-    align-items: center;
+.header > div > .buttons-container {
+  display: flex;
+  align-items: center;
 }
 
-.header > div > .buttons > button {
-    background-color: #0372c1;
-    border: none;
-    border-radius: 2px;
-    color: white;
-    font-size: 14px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
+.btn-primary {
+  background-color: #0372c1;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 14px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .header > div > .user-circle {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .header > div > .user-circle > img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 @media (max-width: 800px) {
-    .header > div > .buttons > button {
-        min-width: auto;
-        height: 40px;
-        padding: 0px 10px;
-    }
+  .header > div > .buttons > button {
+    min-width: auto;
+    height: 40px;
+    padding: 0px 10px;
+  }
 }

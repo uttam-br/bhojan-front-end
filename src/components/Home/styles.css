@@ -1,44 +1,4 @@
-.container {
-  display: grid;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.container > .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px 0px;
-}
-
-.container > .header > .buttons > button {
-  font-size: 16px;
-  margin: 10px;
-  text-align: center;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 2px;
-  background-color: #0372c1;
-  min-width: 125px;
-}
-
-.container > .horizontal-separator {
-  width: 100%;
-  background-color: #e0e0e0;
-}
-
-.container > .body {
-  display: grid;
-  grid-template-columns: auto 300px;
-  align-items: center;
-}
-
-.container > .body > .bullet-points > .bullet-point {
-  margin: 20px 0px;
-}
-
-.container > .body > .explore-button-container > button {
+.btn {
   background-color: #0372c1;
   border: none;
   color: white;
