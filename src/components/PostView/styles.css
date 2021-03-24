@@ -1,3 +1,47 @@
 .post {
   background-color: white;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.post-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.post-image-container img {
+  width: unset;
+}
+
+.post-details {
+  width: 300px;
+  padding: 10px 20px;
+}
+
+.post-details-heading {
+  margin: 10px 0px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.post-details-description {
+  margin: 20px 0px;
+}
+
+.post-details-request-button-container {
+  display: flex;
+  margin: 20px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-button {
+  padding: 10px 40px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  color: #0372c1;
 }

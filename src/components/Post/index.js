@@ -1,8 +1,9 @@
 import React from "react";
 
-import { StarBorder, Star } from "@material-ui/icons";
-
 import "./styles.css";
+
+// custom components
+import AuthorInfo from "../AuthorInfo";
 
 function Post({ post, author }) {
   return (
@@ -13,21 +14,7 @@ function Post({ post, author }) {
           <br />
           <div className="post-description">{post.description}</div>
         </div>
-        <div className="author-container">
-          <div className="author-image-container">
-            <img src={author.image} alt={author.title} />
-          </div>
-          <div className="author-info-container">
-            <h3>{author.name}</h3>
-            <p>
-              <Star fontSize="small" />
-              <Star fontSize="small" />
-              <Star fontSize="small" />
-              <Star fontSize="small" />
-              <StarBorder fontSize="small" />
-            </p>
-          </div>
-        </div>
+        <AuthorInfo author={post.author} />
       </div>
       <div className="column-2">
         <div className="post-image">

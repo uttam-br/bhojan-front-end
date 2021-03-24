@@ -1,0 +1,16 @@
+.author-container {
+  display: flex;
+}
+
+.author-container > .author-image-container {
+  margin-right: 10px;
+}
+
+.author-container > .author-image-container > img {
+  border-radius: 50%;
+}
+
+.author-container > .author-info-container {
+  align-items: center;
+  display: grid;
+}

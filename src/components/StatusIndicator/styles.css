@@ -1,0 +1,19 @@
+.indicator {
+  display: flex;
+  align-items: center;
+}
+
+.indicator .indicator-icon {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.bg-red {
+  background-color: tomato;
+}
+
+.bg-green {
+  background-color: green;
+}

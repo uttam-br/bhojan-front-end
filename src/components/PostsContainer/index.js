@@ -13,7 +13,7 @@ const post = {
   author: {
     name: "Uttam Rabari",
     phone: "9313958351",
-    stars: "4",
+    stars: 3,
     image: "https://via.placeholder.com/50",
   },
 };
