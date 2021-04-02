@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Logo from "../Logo";
 
 import "./styles.css";
 
-const loggedIn = true;
+const loggedIn = false;
 
 function TopBar() {
   return (
@@ -22,8 +23,12 @@ function TopBar() {
           ) : (
             <>
               <div className="buttons">
-                <button className="btn-primary">REGISTER</button>
-                <button className="btn-primary">LOGIN</button>
+                <Link to="/register">
+                  <button className="btn-primary">REGISTER</button>
+                </Link>
+                <Link to="/login">
+                  <button className="btn-primary">LOGIN</button>
+                </Link>
               </div>
             </>
           )}

@@ -3,7 +3,7 @@ import "./styles.css";
 
 import Body from "../Body";
 
-function Home(props) {
+function Login(props) {
   return (
     <Body>
       <div className="form-container">
@@ -26,4 +26,4 @@ function Home(props) {
   );
 }
 
-export default Home;
+export default Login;
