@@ -1,19 +1,30 @@
 import React from "react";
-
-import "./styles.css";
+//import styled from "styled-components";
 
 // custom components
 import AuthorInfo from "../AuthorInfo";
 import Body from "../Body";
 import StatusIndicator from "../StatusIndicator";
 
+// const Post = styled.div`
+//   background-color: white;
+//   padding: 40px;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+// `;
+
+// const Image = styled.div`
+//   display: flex;
+//   justify-content: center;
+// `;
+
 const post = {
   title: "Veg Pizza",
-  available: true,
-  veg: false,
+  available: false,
+  veg: true,
   description: "Approx 2kg, enough for 2 people",
   distance: "8.1km away",
-  image: "https://via.placeholder.com/300",
+  image: "https://via.placeholder.com/400",
   author: {
     name: "Uttam Rabari",
     phone: "9313958351",
@@ -53,10 +64,12 @@ function PostView() {
               <div> </div>
             </div>
             <div>
-              <button className="request-button">Request</button>
+              <button className="request-button" disabled={!post.available}>
+                Request
+              </button>
             </div>
           </div>
-
+          <br />
           <AuthorInfo author={post.author} />
         </div>
       </div>
@@ -65,3 +78,12 @@ function PostView() {
 }
 
 export default PostView;
+
+// <Body>
+// <Post>
+//   <Image>
+//     <img src={post.image} alt={post.title} />
+//   </Image>
+//   <div className="post-image-container"></div>
+// </Post>
+// </Body>

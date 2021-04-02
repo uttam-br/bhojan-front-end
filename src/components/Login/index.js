@@ -17,7 +17,7 @@ function Home(props) {
             <input type="password" placeholder="Password" required />
           </div>
           <p className="small-text">
-            <a href="#">Forgot password?</a>
+            <a href="#forgotPassword">Forgot password?</a>
           </p>
           <button type="submit">Login</button>
         </form>

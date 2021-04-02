@@ -3,7 +3,6 @@
   padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
 }
 
 .post-image-container {
@@ -12,6 +11,7 @@
 }
 
 .post-image-container img {
+  border-radius: 5px;
   width: unset;
 }
 
