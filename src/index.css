@@ -6,7 +6,6 @@
   font-family: "PT Sans", sans-serif;
   margin: 0px;
   padding: 0px;
-  /* border: 1px solid tomato; */
 }
 
 a {
@@ -17,25 +16,4 @@ a {
 img {
   width: 100%;
   height: auto;
-}
-
-h1 {
-  font-weight: 500;
-}
-
-.container {
-  display: grid;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.container > .horizontal-separator {
-  width: 100%;
-  background-color: #e0e0e0;
-}
-
-@media (max-width: 800px) {
-  body {
-    padding: 10px;
-  }
 }

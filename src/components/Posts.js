@@ -1,8 +1,16 @@
 import React from "react";
+import styled from "styled-components";
+import Post from "./Post";
 
-import Post from "../Post";
-
-import "./styles.css";
+const PostsContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px 20px;
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-columns: auto;
+  }
+`;
 
 const post = {
   title: "Burger King",
@@ -18,17 +26,17 @@ const post = {
   },
 };
 
-function PostsContainer(props) {
+function Posts(props) {
   return (
-    <div className="post-container">
+    <PostsContainer>
       <Post post={post} author={post.author} />
       <Post post={post} author={post.author} />
       <Post post={post} author={post.author} />
       <Post post={post} author={post.author} />
       <Post post={post} author={post.author} />
       <Post post={post} author={post.author} />
-    </div>
+    </PostsContainer>
   );
 }
 
-export default PostsContainer;
+export default Posts;

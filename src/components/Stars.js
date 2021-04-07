@@ -2,7 +2,6 @@ import React from "react";
 import { Star, StarBorder } from "@material-ui/icons";
 
 function Stars({ maxStars, stars }) {
-  console.log(stars);
   return (
     <>
       {[...Array(stars)].map((e, i) => (
