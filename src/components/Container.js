@@ -4,24 +4,19 @@ import TopBar from "./TopBar";
 
 const StyledContainer = styled.div`
   display: grid;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
-
+  padding: 0px 20px;
+  padding-bottom: 20px;
   @media (max-width: 800px) {
     padding: 10px;
   }
-`;
-
-const HorizontalSeparator = styled.hr`
-  width: 100%;
-  background-color: #e0e0e0;
 `;
 
 function Container({ children }) {
   return (
     <StyledContainer>
       <TopBar />
-      <HorizontalSeparator />
       <div>{children}</div>
     </StyledContainer>
   );

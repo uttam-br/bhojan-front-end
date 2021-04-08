@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Container from "./Container";
 
 const FormContainer = styled.div`
-  max-width: 600px;
-  margin: 20px 0px;
+  max-width: 300px;
+  margin: 20px auto;
 `;
 const FormHeading = styled.h1`
   font-weight: 400;

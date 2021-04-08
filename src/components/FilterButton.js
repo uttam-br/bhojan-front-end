@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { ArrowDropDown } from "@material-ui/icons";
 
-import "./styles.css";
-
 const StyledFilterButton = styled.div`
   background-color: white;
   border-radius: 5px;

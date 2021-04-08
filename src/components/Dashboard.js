@@ -1,15 +1,14 @@
 import React from "react";
-import "./styles.css";
 
 import Container from "./Container";
 import FilterBar from "./FilterBar";
-import PostsContainer from "./PostsContainer";
+import Posts from "./Posts";
 
 function Dashboard() {
   return (
     <Container>
       <FilterBar />
-      <PostsContainer />
+      <Posts />
     </Container>
   );
 }

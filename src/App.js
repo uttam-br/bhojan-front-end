@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import PostView from "./components/PostView";
 import Register from "./components/Register";
+// import Profile from "./components/Profile";
+// import PostCreator from "./components/PostCreator";
 
 function App() {
   return (

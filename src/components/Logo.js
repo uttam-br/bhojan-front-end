@@ -4,8 +4,9 @@ import styled from "styled-components";
 
 const MainLogo = styled.h1`
   color: #0372c1;
-  font-family: "Codystar", sans-serif;
-  font-size: 60px;
+  font-family: "Train One", sans-serif;
+  font-size: 42px;
+  margin: auto;
 
   @media (max-width: 800px) {
     font-size: 42px;

@@ -4,6 +4,7 @@ import Stars from "./Stars";
 
 const AuthorContainer = styled.div`
   display: flex;
+  color: #343434;
 `;
 const ImageContainer = styled.div`
   margin-right: 10px;

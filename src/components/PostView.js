@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import AuthorInfo from "./AuthorInfo";
 import Container from "./Container";
@@ -7,11 +7,11 @@ import StatusIndicator from "./StatusIndicator";
 
 const post = {
   title: "Veg Pizza",
-  available: false,
+  available: true,
   veg: true,
   description: "Approx 2kg, enough for 2 people",
   distance: "8.1km away",
-  image: "https://via.placeholder.com/400",
+  image: "https://via.placeholder.com/300",
   author: {
     name: "Uttam Rabari",
     phone: "9313958351",
@@ -58,6 +58,18 @@ const RequestButton = styled.button`
   border: none;
   border-radius: 5px;
   color: #0372c1;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 300ms linear;
+  ${(props) =>
+    props.disabled &&
+    css`
+      cursor: not-allowed;
+    `}
+  &:hover {
+    background-color: #0372c1;
+    color: white;
+  }
 `;
 
 function PostView() {
